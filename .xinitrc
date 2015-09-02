@@ -1,2 +1,13 @@
-tint2 &
-exec dbus-launch --exit-with-session openbox-session
+# Fix screen resolution (screen resolution too gooood)
+xrandr -s 1920x1080 &
+
+# Network Manager
+nm-applet &
+
+# Remap Caps Loock to eft Control
+if [ -s ~/.Xmodmap ]; then
+  xmodmap ~/.Xmodmap &
+fi
+
+# Awesome WM is awesome
+awesome
