@@ -1,0 +1,15 @@
+# Default terminal type
+term xterm
+vbell off
+startup_message off
+altscreen on
+
+#backtick 2 10 1 "/home/ras/.uptime"
+
+# Use 256 colors
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+defbce "on"
+
+hardstatus off
+hardstatus alwayslastline '%{= kw} %H %= %-w%{+b y}%n %t%{-b y}%{w}%+w %= %{c} %~ '
