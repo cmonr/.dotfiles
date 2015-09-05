@@ -4,6 +4,9 @@ xrandr -s 1920x1080 &
 # Network Manager
 nm-applet &
 
+# PulseAudio
+pulseaudio -D &
+
 # Remap Caps Loock to eft Control
 if [ -s ~/.Xmodmap ]; then
   xmodmap ~/.Xmodmap &
