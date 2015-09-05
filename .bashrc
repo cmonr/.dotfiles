@@ -5,7 +5,7 @@
 alias ls='ls --color=auto -h'
 export GREP_COLOR="1;33"  #Light Yellow
 alias grep='grep --color=auto'
-alias pacman='pacman-color'
+alias pacman='sudo pacman'
 
 # Setup terminal prompt
 set_prompt_style () {
