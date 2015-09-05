@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# If this file is not in ~/Projects/.dotfiles, exit
+# TODO: If this file is not in ~/Projects/.dotfiles, exit
 
 # Move to base directory
 cd ~/Projects/.dotfiles
@@ -28,6 +28,9 @@ ln -s {`pwd`,~}/.gitconfig
 
 # Gtk
 ln -s {`pwd`,~}/.gtkrc-2.0
+
+# X11
+ln -s {`pwd`,~}/.xinitrc
 
 # Remap Caps Lock to Ctrl
 ln -s {`pwd`,~}/.Xmodmap
