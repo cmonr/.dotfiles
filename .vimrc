@@ -6,10 +6,12 @@ set expandtab
 
 "Insert # of spaces in replacement of tab
 set tabstop=2
+set shiftround
 
 "Enable smartindent
 set smartindent
 set autoindent
+set copyindent
 
 "Set tab space
 set shiftwidth=2
@@ -46,6 +48,14 @@ noremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 set showtabline=2
 noremap <C-tab> :tabnext <CR>
 noremap <C-S-tab> :tabprevious <CR>
+
+"Disable typical vim backup files
+set noswapfile
+set nobackup
+
+"Expected directions for screen splitting
+set splitbelow
+set splitright
 
 "Immediately start showing search results
 set incsearch
